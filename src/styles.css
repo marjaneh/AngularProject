@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+nav{
+    background-color: #0d407f;
+}
+
+#SliderWrapper{
+    margin-top:82px;
+}
+
+.addIcon{
+    background: url("assets/icons/Add_icon_off.png") no-repeat;
+    background-position: center center;
+    height: 24px;
+    width: 24px;
+}
+
+.custom-button-width {
+	width:120px;
+}
+.custom-input-width {
+	width:120px;
+    margin-right:3px;
+}

@@ -1,0 +1,23 @@
+.table{
+    width:100%;
+}
+
+.col {
+    float: left;
+    height: 34px;
+}
+
+.col1 {
+    width: 45%;
+}
+
+.col2 {
+    width: 5%;
+}
+
+.col3 {
+    width: 50%;
+    position: relative;
+    text-align: right;
+}
+

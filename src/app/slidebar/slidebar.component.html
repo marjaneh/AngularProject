@@ -1,0 +1,9 @@
+<div class="sidenav" id="sidebar-wrapper"  [hidden]= "isSideNavHidden">
+    <span class="closebtn" (click)="closeNav()">&times;</span>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/tasks">Tasks</a>
+    <a routerLink="/reports">Reports</a>
+    <a routerLink="/settings">Settings</a>
+
+</div>
+<span class="navSymbol" (click)="openNav()">&#9776;</span>

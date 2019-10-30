@@ -1,0 +1,38 @@
+<div class="container">
+
+  <table class="table">
+    <tr>
+      <td class="col col1">
+        <h4>{{title}}</h4>
+      </td>
+      <td class="col col2"></td>
+      <td class="col col3">
+        <a routerLink="/create-task">
+          <img [src]="iconUrl" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()" />
+        </a>
+      </td>
+    </tr>
+  </table>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>DueDate</th>
+        <th colspan="2">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <td>{{ task.priority }}</td>
+        <td>{{ task.description | summary: 10 }}</td>
+        <td>{{ task.status }}</td>
+        <td>{{ task.dueDate | date:'yyyy/MM/dd' }}</td>
+        <td><a [routerLink]="['/update-task', task.id]" class="btn btn-primary">Edit</a></td>
+        <td><a (click) = "deleteTask(task.id)" class="btn btn-danger">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
